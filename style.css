@@ -1,4 +1,12 @@
-/* Reset / base styles */
+:root {
+    --morkbla: #122d40ff;
+    --morkbla1: #163950ff;
+    --bla1: #1a4460ff;
+    --bla: #28668fff;
+    --lysbla1: #7aa0b9ff;
+    --lysbla: #bfdbedff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +57,7 @@ section {
     padding: 1rem;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
