@@ -68,14 +68,14 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
-article {
+a {
     margin-bottom: 1.5rem;
     padding: 1rem;
     border: 1px solid var(--gra);
     border-radius: 6px;
 }
 
-article h3 {
+a h3 {
     margin-bottom: 0.5rem;
 }
 
