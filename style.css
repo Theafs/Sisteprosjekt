@@ -1,4 +1,14 @@
-/* Reset / base styles */
+:root {
+    --morkbla: #122d40ff;
+    --morkbla1: #163950ff;
+    --bla1: #1a4460ff;
+    --bla: #28668fff;
+    --lysbla1: #7aa0b9ff;
+    --lysbla: #bfdbedff;
+    --gra: #f4f4f4;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +17,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--gra);
+    color: black;
     line-height: 1.6;
 }
 
 header {
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: var(--morkbla);
+    color: white;
     padding: 1rem;
     text-align: center;
 }
@@ -31,7 +41,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -47,21 +57,21 @@ main {
 section {
     margin-bottom: 3rem;
     padding: 1rem;
-    background-color: #fff;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     margin-bottom: 1rem;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid var(--morkbla1);
     padding-bottom: 0.5rem;
 }
 
 article {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--gra);
     border-radius: 6px;
 }
 
@@ -70,7 +80,7 @@ article h3 {
 }
 
 button {
-    background-color: #000000;
+    background-color: black;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
@@ -79,13 +89,13 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--bla1);
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #1a1a1a;
+    background-color: var(--morkbla1);
     color: #fff;
     margin-top: 2rem;
 }
