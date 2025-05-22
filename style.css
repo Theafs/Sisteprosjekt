@@ -20,6 +20,7 @@ body {
     background-color: var(--gra);
     color: black;
     line-height: 1.6;
+    margin-top: 150px;
 }
 
 header {
@@ -48,6 +49,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    border: none;
 }
 
 nav ul li a:hover {
@@ -56,11 +58,12 @@ nav ul li a:hover {
 
 main {
     padding: 2rem;
+    background-color: var(--gra);
 }
 
 section {
     margin-bottom: 3rem;
-    padding: 1rem;
+    padding: 50px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -72,15 +75,21 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
+section p {
+    margin-bottom: 50px;
+}
+
 a {
     margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 1px solid var(--gra);
     border-radius: 6px;
+    text-decoration: none;
+    color: black;
 }
 
 a h3 {
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 button {
