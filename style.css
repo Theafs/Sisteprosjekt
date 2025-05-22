@@ -79,6 +79,19 @@ section p {
     margin-bottom: 50px;
 }
 
+article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boks{
+    background-color: var(--lysbla1);
+    padding: 50px;
+    height: 600px;
+    margin-right: 50px;
+}
+
 a {
     margin-bottom: 1.5rem;
     padding: 1rem;
