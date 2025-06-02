@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 :root {
     --morkbla: #122d40ff;
     --morkbla1: #163950ff;
@@ -75,6 +77,8 @@ section h2 {
     border-bottom: 2px solid var(--morkbla1);
     padding-bottom: 0.5rem;
     font-size: 2.5rem;
+    margin: 25px 0px;
+    
 }
 
 section p {
@@ -82,6 +86,13 @@ section p {
 }
 
 article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.info{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -100,6 +111,19 @@ article{
 .boks p{
     font-size: 3.5rem;
     font-weight: bold;
+    font-family: "Oswald", sans-serif;
+}
+
+.pris{
+    background-color: var(--lysbla);
+    border-radius: 6px;
+    padding: 50px;
+    width: 600px;
+    height: 700px;
+    margin: 50px 30px;
+    font-size: 2.75rem;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
 }
 
 a {
@@ -128,10 +152,53 @@ button:hover {
     background-color: var(--bla1);
 }
 
-img:hover {
+article img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
+
+.bilder {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    width: 750px;
+    height: 600px;
+  }
+
+  .bilder img {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .bilder img.active {
+    display: block;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  .arrow:hover {
+    background: rgba(0,0,0,0.6);
+  }
+
+  .arrow.left {
+    left: 10px;
+  }
+
+  .arrow.right {
+    right: 10px;
+  }
 
 footer {
     text-align: center;

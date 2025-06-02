@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dell XPS 13</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Techshop</h1>
@@ -15,25 +17,51 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Dell XPS 13</h2>
-        <p>Den nye Dell XPS 13 er en kraftfuld og stilfuld bærbar computer, der er perfekt til både arbejde og underholdning. Den har en 13,4-tommer InfinityEdge-skærm med en opløsning på 1920 x 1200 pixels, hvilket giver en fantastisk visuel oplevelse.</p>
-        <p>Med en Intel Core i7-processor og 16 GB RAM kan du nemt multitaske og køre krævende programmer uden problemer. Den har også en hurtig 512 GB SSD, der sikrer hurtig opstart og adgang til dine filer.</p>
-        <p>Designet er slankt og let, hvilket gør det nemt at tage med dig overalt. Den har også et baggrundsbelyst tastatur og en præcisionspegeplade for nem navigation.</p>
-        <p>Pris: 12.999 kr.</p>
 
-        <footer>
-            <div>
-                <h3>Kontakt oss</h3>
-                <p>E-post: <a href="malio:techshop@nyhet.no">techshop@shop.no</a></p>
-                <p>Telefon: <a href="tel:+4712345678">+47 12 34 56 78</a></p>
+    <main>
+        <section class="info">
+            <div class="container">
+                <div class="bilder">
+                    <img src="bilder/DellXPS.png" class="active">
+                    <img src="bilder/DellXPS1.png">
+                    <img src="bilder/DellXPS2.png">
+                    <img src="bilder/DellXPS3.png">
+                    <img src="bilder/DellXPS4.png">
+                    <img src="bilder/DellXPS5.png">
+                    <button class="arrow left" onclick="prevImage()">&#8592;</button>
+                    <button class="arrow right" onclick="nextImage()">&#8594;</button>
+                  </div>
+                <h2>Dell XPS 13</h2>
+                <p>Den nye Dell XPS 13 er en kraftfuld og stilfuld bærbar computer, der er perfekt til både arbejde og
+                    underholdning. Den har en 13,4-tommer InfinityEdge-skærm med en opløsning på 1920 x 1200 pixels,
+                    hvilket
+                    giver en fantastisk visuel oplevelse.</p>
+                <p>Med en Intel Core i7-processor og 16 GB RAM kan du nemt multitaske og køre krævende programmer uden
+                    problemer. Den har også en hurtig 512 GB SSD, der sikrer hurtig opstart og adgang til dine filer.
+                </p>
+                <p>Designet er slankt og let, hvilket gør det nemt at tage med dig overalt. Den har også et
+                    baggrundsbelyst
+                    tastatur og en præcisionspegeplade for nem navigation.</p>
             </div>
-            <div>
-                <p>&copy; 2025 Techshop. Alle rettigheter reservert.</p>
-                <p>Laget av Silje og Thea</p>
+            <div class="pris">
+                <p>12.999,-</p>
             </div>
-        </footer>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Kontakt oss</h3>
+            <p>E-post: <a href="malio:techshop@nyhet.no">techshop@shop.no</a></p>
+            <p>Telefon: <a href="tel:+4712345678">+47 12 34 56 78</a></p>
+        </div>
+        <div>
+            <p>&copy; 2025 Techshop. Alle rettigheter reservert.</p>
+            <p>Laget av Silje og Thea</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
