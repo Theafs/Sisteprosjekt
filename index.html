@@ -18,12 +18,18 @@
                 <li><a href="#sct1">Laptoper</a></li>
                 <li><a href="#sct2">Mobiltelefoner</a></li>
                 <li><a href="#sct3">Tilbehør</a></li>
-                <li>
-                    <div id="cart">
-                    🛒 <span id="cart-count">0</span>
-                  </div>
-                </li>
             </ul>
+            <div id="cart-wrapper">
+                <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+                <div id="cart-dropdown" class="hidden">
+                  <h4>Handlekurv</h4>
+                  <ul id="cart-items"></ul>
+                  <p id="empty-msg">Handlekurven er tom</p>
+                  <button id="clear-cart">Tøm handlekurv</button>
+                </div>
+              </div>
+
+            
 
         </nav>
     </header>

@@ -18,6 +18,16 @@
                 🛒 <span id="cart-count">0</span>
               </div>
             </li>
+
+            <div id="cart-wrapper">
+                <div id="cart-icon">🛒 <span id="cart-count">0</span></div>
+                <div id="cart-dropdown" class="hidden">
+                  <h4>Handlekurv</h4>
+                  <ul id="cart-items"></ul>
+                  <p id="empty-msg">Handlekurven er tom</p>
+                </div>
+              </div>
+               
         </nav>
     </header>
 
@@ -41,7 +51,9 @@
             </div>
             <div class="pris">
                 <p>2 949,-</p>
-                <button class="add-to-cart">Legg til i handlekurv</button>
+                <button class="add-to-cart"
+        data-name="AirPods Pro"
+        data-image="bilder/AirPods.png">Legg til i handlekurv</button>
             </div>
         </section>
     </main>
