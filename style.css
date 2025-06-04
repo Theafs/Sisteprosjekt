@@ -118,19 +118,19 @@ article{
 }
 
 .pris{
-    background-color: var(--lysbla);
-    border-radius: 6px;
-    padding: 50px;
-    width: 600px;
-    height: 700px;
-    margin: 50px 30px;
-    font-size: 2.75rem;
-    font-weight: bold;
-    font-family: "Oswald", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    background-color: var(--lysbla);
+    border-radius: 6px;
+    padding: 50px;
+    width: 600px;
+    height: 600px;
+    margin: 50px 30px;
+    font-size: 2.75rem;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
 }
 
 a {
