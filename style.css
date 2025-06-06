@@ -330,7 +330,53 @@ footer {
   cursor: pointer;
 }
 
-  
-   
-   
-  
+.checkout-main {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--gra);
+}
+
+#checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#checkout-form h3 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: var(--morkbla);
+}
+
+#checkout-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#checkout-form input, 
+#checkout-form select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+#checkout-form button[type="submit"] {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: var(--morkbla);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-form button[type="submit"]:hover {
+  background-color: var(--bla1);
+}
