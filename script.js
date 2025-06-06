@@ -103,3 +103,10 @@ const images = document.querySelectorAll('.bilder img');
         addToCart("Dell XPS 13", "bilder/DellXPS.png");
     });
     
+    //checkout
+    document.getElementById("checkout-form").addEventListener("submit", function(event){
+        event.preventDefault();
+        alert("Takk for din bestilling!");
+        localStorage.removeItem("cart");
+        window.location.href = "index.html";
+    });

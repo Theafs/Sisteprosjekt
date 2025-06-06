@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -11,14 +12,57 @@
         <nav>
             <ul>
                 <li><a href="index.html">Hjemside</a></li>
+                <li><a href="handlekurv.html">Handlekurv</a></li>
             </ul>
         </nav>
     </header>
 
+    <main>
+        <section>
+            <h2>Fullfør bestillingen</h2>
+            <form id="checkout-form">
+                <h3>Kundeinformasjon</h3>
+                <label for="name">Fullt navn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefon">Telefonnummer:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+
+                <h3>Levering</h3>
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+                <label for="postnummer">Postnummer:</label>
+                <input type="text" id="postnummer" name="postnummer" required>
+
+                <label for="levering">Leveringsmetode:</label>
+                <select id="levering" name="levering" required>
+                    <option value="">Velg</option>
+                    <option value="standard">Standard (3-5 dager)</option>
+                    <option value="express">Ekspress (1-2 dager)</option>
+                </select>
+
+                <h3>Betaling</h3>
+                <label for="betaling">Betalingsmetode:</label>
+                <select id="betaling" name="betaling" required>
+                    <option value="">Velg</option>
+                    <option value="kort">Kort</option>
+                    <option value="vipps">Vipps</option>
+                    <option value="faktura">Faktura</option>
+                </select>
+
+                <button type="submit">Fullfør kjøp</button>
+            </form>
+        </section>
+    </main>
+
     <footer>
         <div>
             <h3>Kontakt oss</h3>
-            <p>E-post: <a href="malio:techshop@nyhet.no">techshop@shop.no</a></p>
+            <p>E-post: <a href="mailto:techshop@shop.no">techshop@shop.no</a></p>
             <p>Telefon: <a href="tel:+4712345678">+47 12 34 56 78</a></p>
         </div>
         <div>
@@ -26,6 +70,7 @@
             <p>Laget av Silje og Thea</p>
         </div>
     </footer>
-    
+
+    <script src="script.js"></script>
 </body>
 </html>
