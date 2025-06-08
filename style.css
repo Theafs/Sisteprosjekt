@@ -26,7 +26,7 @@ body {
     background-color: var(--gra);
     color: black;
     line-height: 1.6;
-    margin-top: 150px;
+    margin-top: 130px;
 }
 
 header {
@@ -39,10 +39,15 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
+    height: 130px;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 10px;
+}
+
+nav button {
+    margin-top: 30px;
 }
 
 nav ul {
@@ -76,33 +81,42 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+#sct1,
+#sct2,
+#sct3 {
+    scroll-margin-top: 160px;
+}
+
+
 section h2 {
     border-bottom: 2px solid var(--morkbla1);
     padding-bottom: 0.5rem;
     font-size: 2.5rem;
     margin: 25px 0px;
-    
+
 }
 
 section p {
     margin-bottom: 50px;
 }
 
-article{
+
+
+article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px;
 }
 
-.boks{
+.boks {
     padding: 80px 20px;
     margin-right: 40px;
     display: flex;
@@ -111,13 +125,13 @@ article{
     align-items: stretch;
 }
 
-.boks p{
+.boks p {
     font-size: 3.5rem;
     font-weight: bold;
     font-family: "Oswald", sans-serif;
 }
 
-.pris{
+.pris {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -170,42 +184,42 @@ article img:hover {
     border-radius: 12px;
     max-width: 800px;
     margin: 0 auto;
-  }
+}
 
-  .bilder img {
+.bilder img {
     width: 100%;
     height: 100%;
     display: none;
-  }
+}
 
-  .bilder img.active {
+.bilder img.active {
     display: block;
-  }
+}
 
-  .arrow {
+.arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
-  }
+}
 
-  .arrow:hover {
-    background: rgba(0,0,0,0.6);
-  }
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
 
-  .arrow.left {
+.arrow.left {
     left: 10px;
-  }
+}
 
-  .arrow.right {
+.arrow.right {
     right: 10px;
-  }
+}
 
 footer {
     text-align: center;
@@ -215,44 +229,43 @@ footer {
     margin-top: 2rem;
 }
 
-  #cart-wrapper {
+#cart-wrapper {
     position: relative;
     left: 650px;
     bottom: 30px;
     display: inline-block;
-  }
-   
-  #cart-icon {
+}
+
+#cart-icon {
     cursor: pointer;
     font-size: 1.5rem;
-  }
-   
-  #cart-dropdown {
+}
+
+#cart-dropdown {
     position: absolute;
     top: 100%;
     right: 0;
     background: white;
     border: 1px solid var(--lysbla);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
     width: 300px;
     z-index: 10;
     border-radius: 8px;
-    max-height: 400px;      
-    overflow-y: auto; 
-  }
-   
-  #cart-dropdown img {
-    width: auto;
-    height: 40px;
-    margin-right: 10px;
-  }
-   
-  .hidden {
-    display: none;
-  }
+    max-height: 400px;
+    overflow-y: auto;
+}
 
-  #clear-cart {
+#cart-dropdown img {
+    width: auto;
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+#clear-cart {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: var(--bla1);
@@ -260,13 +273,13 @@ footer {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-   
-  #clear-cart:hover {
-    background-color: var(--morkbla);
-  }
+}
 
-  #cart-items {
+#clear-cart:hover {
+    background-color: var(--morkbla);
+}
+
+#cart-items {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -311,63 +324,113 @@ footer {
     background-color: var(--morkbla);
 }
 
-.checkout{
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: var(--bla1);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.checkout {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--bla1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .checkout-main {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: var(--gra);
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--gra);
 }
 
 #checkout-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #checkout-form h3 {
-  font-size: 2rem;
-  margin-top: 30px;
-  color: var(--morkbla);
+    font-size: 2rem;
+    margin-top: 30px;
+    color: var(--morkbla);
 }
 
 #checkout-form label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
 }
 
-#checkout-form input, 
+#checkout-form input,
 #checkout-form select {
-  padding: 12px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  width: 100%;
-  background-color: #fff;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #fff;
 }
 
 #checkout-form button[type="submit"] {
-  margin-top: 30px;
-  padding: 15px;
-  background-color: var(--morkbla);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--morkbla);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 #checkout-form button[type="submit"]:hover {
-  background-color: var(--bla1);
+    background-color: var(--bla1);
+}
+
+@media (width<768px) {
+    header {
+        height: 120px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 20px;
+        width: 97vh;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .boks {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #cart-wrapper {
+        position: relative;
+        left: 300px;
+        bottom: 30px;
+        display: inline-block;
+    }
+    
+    .info {
+        flex-direction: column;
+    }
+
+    .pris {
+        width: 100%;
+        height: 100%;
+        margin: 20px 0;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+        padding: 8px;
+    }
+
+    footer{
+        width: 100vh;
+    }
 }

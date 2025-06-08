@@ -24,12 +24,10 @@ const images = document.querySelectorAll('.bilder img');
         const cartDropdown = document.getElementById("cart-dropdown");
         const cartItemsList = document.getElementById("cart-items");
         const emptyMsg = document.getElementById("empty-msg");
-        const goToCartBtn = document.getElementById("go-to-cart");  // Ny knapp
+        const goToCartBtn = document.getElementById("go-to-cart");  
     
-        // Hent handlekurv fra localStorage, eller start med tom liste
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
     
-        // Oppdater handlekurv-ikon og dropdown-innhold
         function updateCartUI() {
             cartCountDisplay.textContent = cart.length;
             cartItemsList.innerHTML = "";
@@ -48,7 +46,6 @@ const images = document.querySelectorAll('.bilder img');
                     cartItemsList.appendChild(li);
                 });
     
-                // Aktiver sletting av enkeltprodukter i dropdown
                 document.querySelectorAll(".remove-item").forEach(button => {
                     button.addEventListener("click", () => {
                         const index = parseInt(button.dataset.index);
@@ -62,12 +59,10 @@ const images = document.querySelectorAll('.bilder img');
     
         updateCartUI();
     
-        // Toggle dropdown når man klikker på handlekurv-ikonet
         cartIcon.addEventListener("click", () => {
             cartDropdown.classList.toggle("hidden");
         });
     
-        // Legg til produkt i handlekurven når "Legg til i handlekurv"-knapp trykkes
         const buttons = document.querySelectorAll(".add-to-cart");
         buttons.forEach(button => {
             button.addEventListener("click", () => {
@@ -81,7 +76,6 @@ const images = document.querySelectorAll('.bilder img');
             });
         });
     
-        // Når man klikker "Se handlekurv"-knappen, send brukeren til handlekurv.html
         goToCartBtn.addEventListener("click", () => {
             window.location.href = "handlekurv.html";
         });
