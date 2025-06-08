@@ -56,6 +56,7 @@
 
                 <button type="submit">Fullfør kjøp</button>
             </form>
+       
         </section>
     </main>
 
@@ -71,6 +72,12 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("checkout-form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            window.location.href = "index.html"; 
+            alert("Takk for kjøpet! Du vil motta en bekreftelse på e-post.");
+        });
+    </script>
 </body>
 </html>

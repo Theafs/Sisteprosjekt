@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPhone 16</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         .bilder img{
@@ -20,12 +21,16 @@
         <nav>
             <ul>
                 <li><a href="index.html">Hjemside</a></li>
-                <li>
-                    <div id="cart">
-                    🛒 <span id="cart-count">0</span>
-                  </div>
-                </li>
             </ul>
+            <div id="cart-wrapper">
+                <div id="cart-icon"><i class="fa-solid fa-cart-shopping"></i><span id="cart-count">0</span></div>
+                <div id="cart-dropdown" class="hidden">
+                    <h4>Handlekurv</h4>
+                    <ul id="cart-items"></ul>
+                    <p id="empty-msg">Handlekurven er tom</p>
+                    <button id="go-to-cart">Se handlekurv</button>
+                </div>
+            </div>
         </nav>
     </header>
     <main>

@@ -86,20 +86,8 @@ const images = document.querySelectorAll('.bilder img');
             window.location.href = "handlekurv.html";
         });
     });
+
     
-
-
-    function addToCart(name, image) {
-        let cart = JSON.parse(localStorage.getItem("cart")) || [];
-        cart.push({ name: name, image: image });
-        localStorage.setItem("cart", JSON.stringify(cart));
-    }
     
-    document.getElementById("legg-til-mac").addEventListener("click", () => {
-        addToCart("MacBook Pro", "bilder/mac.png");
-    });
-
-    document.getElementById("legg-til-Dell XPS 13").addEventListener("click", () => {
-        addToCart("Dell XPS 13", "bilder/DellXPS.png");
-    });
+   
     
