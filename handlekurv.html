@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handlekurv</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Techshop</h1>
@@ -39,41 +41,42 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-    const cartItemsContainer = document.getElementById("cart-items");
-    const clearCartButton = document.getElementById("clear-cart");
+            const cartItemsContainer = document.getElementById("cart-items");
+            const clearCartButton = document.getElementById("clear-cart");
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    function renderCart() {
-        cartItemsContainer.innerHTML = ""; // Tøm innholdet
+            function renderCart() {
+                cartItemsContainer.innerHTML = ""; // Tøm innholdet
 
-        if (cart.length === 0) {
-            cartItemsContainer.innerHTML = "<p>Handlekurven er tom.</p>";
-            return;
-        }
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = "<p>Handlekurven er tom.</p>";
+                    return;
+                }
 
-        cart.forEach(item => {
-            const itemDiv = document.createElement("div");
-            itemDiv.classList.add("cart-item");
+                cart.forEach(item => {
+                    const itemDiv = document.createElement("div");
+                    itemDiv.classList.add("cart-item");
 
-            itemDiv.innerHTML = `
+                    itemDiv.innerHTML = `
                 <img src="${item.image}" alt="${item.name}">
                 <h3>${item.name}</h3>
             `;
 
-            cartItemsContainer.appendChild(itemDiv);
+                    cartItemsContainer.appendChild(itemDiv);
+                });
+            }
+
+            clearCartButton.addEventListener("click", () => {
+                cart = [];
+                localStorage.setItem("cart", JSON.stringify(cart));
+                renderCart();
+            });
+
+            renderCart();
         });
-    }
-
-    clearCartButton.addEventListener("click", () => {
-        cart = [];
-        localStorage.setItem("cart", JSON.stringify(cart));
-        renderCart();
-    });
-
-    renderCart();
-});
 
     </script>
 </body>
+
 </html>
